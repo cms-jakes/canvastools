@@ -1,0 +1,25 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Google Drive Resource Embedder</title>
+<style>  <link href='https://fonts.googleapis.com/css?family=Hind:600' rel='stylesheet' type='text/css'>  </style>
+  <script src="../Scripts/angular.min.js"></script>
+  <script src="../Scripts/googleEmbedder.js"></script>
+</head>
+<body ng-app="scopeExample" style="background-image:url(../images/driveapps.png);font-family:sans-serif">
+<div ng-controller="MyController" style="padding:10% 10% 50% 10%">
+    <div style="background-color:#ffffff;padding:3%;">
+      <div style="margin:3%;align:center"><p style="font-size:3em">Google Drive Resource Embedder<p>
+    <input type="text" ng-model="url" style="font-size:1em" size="50">
+    <button ng-click='getCode()' style="font-size:1em">Get Code</button>
+    <hr>
+    <div style="font-size:1.5em;color:#990000;background-color:#dddddd;height:200px;padding:10px;   white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;"><code>{{embedCode}}</code></div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

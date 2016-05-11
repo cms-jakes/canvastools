@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="angular.min.js"></script>
+<script src="script.js"></script>
+<body ng-app="myModule">
+<div ng-contorller="myController">
+ 	<p>Shared URL : <input type="text" ng-model="message"></p>
+ 	<button ng-click='getCode()'>Get Code</button>
+    <h1><code style="color:#990000">{{embedCode}}</code></h1>
+</div>
+
+</body>
+</html>
